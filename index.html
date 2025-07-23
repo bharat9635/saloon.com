@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour & Grace Family Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1600x900/f7fafc/e2e8f0?text=Bright+Salon+Interior');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header id="home" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-display text-gray-900">Glamour & Grace</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-pink-500 transition-colors">Home</a>
+                <a href="#services" class="text-gray-600 hover:text-pink-500 transition-colors">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-pink-500 transition-colors">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-pink-500 transition-colors">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-pink-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-pink-600 transition-transform transform hover:scale-105">Book Now</a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-pink-500">Home</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:text-pink-500">Services</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-pink-500">About</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-pink-500">Contact</a>
+            <a href="#contact" class="block mt-2 bg-pink-500 text-white font-semibold px-5 py-2 rounded-lg text-center hover:bg-pink-600">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-bg">
+            <div class="bg-black/40 min-h-[60vh] md:min-h-[80vh] flex items-center">
+                <div class="container mx-auto px-6 text-center text-white">
+                    <h1 class="text-4xl md:text-6xl font-display mb-4 leading-tight">Style for the Whole Family</h1>
+                    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Experience expert care in a friendly atmosphere. From trendy cuts to timeless styles, we've got everyone covered.</p>
+                    <a href="#contact" class="bg-white text-pink-600 font-bold px-8 py-4 rounded-lg hover:bg-gray-200 transition-transform transform hover:scale-105 text-lg">Book an Appointment</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display text-gray-900">Our Services</h2>
+                    <p class="text-gray-600 mt-2 max-w-xl mx-auto">We offer a wide range of services to meet all your family's beauty needs.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-xl transition-shadow">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-pink-100 p-4 rounded-full">
+                                <i data-lucide="scissors" class="w-8 h-8 text-pink-500"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Haircuts & Styling</h3>
+                        <p class="text-gray-600">Precision cuts for men, women, and children. Blowouts, updos, and styling for any occasion.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-xl transition-shadow">
+                        <div class="flex justify-center mb-4">
+                             <div class="bg-purple-100 p-4 rounded-full">
+                                <i data-lucide="paintbrush-2" class="w-8 h-8 text-purple-500"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Hair Coloring</h3>
+                        <p class="text-gray-600">From full color and highlights to balayage and creative shades, our experts bring your vision to life.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-xl transition-shadow">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-teal-100 p-4 rounded-full">
+                                <i data-lucide="sparkles" class="w-8 h-8 text-teal-500"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Manicures & Pedicures</h3>
+                        <p class="text-gray-600">Relax and rejuvenate with our range of nail services, including gel, acrylics, and spa treatments.</p>
+                    </div>
+                     <!-- Service Card 4 -->
+                    <div class="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-xl transition-shadow">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-orange-100 p-4 rounded-full">
+                                <i data-lucide="smile" class="w-8 h-8 text-orange-500"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Kids' Cuts</h3>
+                        <p class="text-gray-600">A fun and patient environment for our youngest clients. We make haircuts a happy experience.</p>
+                    </div>
+                     <!-- Service Card 5 -->
+                    <div class="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-xl transition-shadow">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-blue-100 p-4 rounded-full">
+                                <i data-lucide="flower-2" class="w-8 h-8 text-blue-500"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Facials & Skincare</h3>
+                        <p class="text-gray-600">Customized facials and skin treatments to leave you feeling refreshed and glowing.</p>
+                    </div>
+                     <!-- Service Card 6 -->
+                    <div class="bg-gray-50 rounded-lg p-8 text-center shadow-md hover:shadow-xl transition-shadow">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-red-100 p-4 rounded-full">
+                                <i data-lucide="party-popper" class="w-8 h-8 text-red-500"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Special Occasions</h3>
+                        <p class="text-gray-600">Bridal packages, prom styling, and makeup services to make your big day perfect.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/e2e8f0/333?text=Our+Friendly+Team" alt="Salon Team" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-display text-gray-900 mb-4">Welcome to Our Salon</h2>
+                        <p class="text-gray-600 mb-4">Founded in 2010, Glamour & Grace was born from a passion for creating a welcoming space where every family member can feel pampered and stylish. Our team of experienced stylists is dedicated to providing top-notch service and personalized care.</p>
+                        <p class="text-gray-600">We believe that a great haircut can boost confidence and that a moment of relaxation is essential. We use high-quality products and stay up-to-date with the latest trends to ensure you always leave looking and feeling your best.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display text-gray-900">What Our Clients Say</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <p class="text-gray-600 mb-4">"The best salon for the whole family! They are so patient with my kids, and I always leave with a perfect haircut. Highly recommend!"</p>
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/50x50/f0f0f0/333?text=A" alt="Client 1" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold">Sarah L.</p>
+                                <p class="text-sm text-gray-500">Happy Mom</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <p class="text-gray-600 mb-4">"I've been coming here for years for my color. The stylists are true artists and always make me feel fabulous. The atmosphere is so friendly."</p>
+                         <div class="flex items-center">
+                            <img src="https://placehold.co/50x50/f0f0f0/333?text=B" alt="Client 2" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold">Jessica M.</p>
+                                <p class="text-sm text-gray-500">Loyal Client</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <p class="text-gray-600 mb-4">"A clean, professional, and welcoming salon. They do a fantastic job with men's cuts and are always on time with appointments."</p>
+                         <div class="flex items-center">
+                            <img src="https://placehold.co/50x50/f0f0f0/333?text=C" alt="Client 3" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold">David R.</p>
+                                <p class="text-sm text-gray-500">Regular Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display text-gray-900">Visit Us or Get in Touch</h2>
+                    <p class="text-gray-600 mt-2">We can't wait to welcome you!</p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-10">
+                    <!-- Contact Info & Hours -->
+                    <div class="lg:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                        <div class="space-y-4 text-gray-700">
+                            <div class="flex items-center">
+                                <i data-lucide="map-pin" class="w-6 h-6 mr-4 text-pink-500"></i>
+                                <span>123 Beauty Lane, Style City, ST 12345</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-lucide="phone" class="w-6 h-6 mr-4 text-pink-500"></i>
+                                <span>(123) 456-7890</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-lucide="mail" class="w-6 h-6 mr-4 text-pink-500"></i>
+                                <span>hello@glamourgrace.com</span>
+                            </div>
+                        </div>
+                        <hr class="my-8">
+                        <h3 class="text-2xl font-semibold mb-6">Opening Hours</h3>
+                        <div class="space-y-2 text-gray-700">
+                            <div class="flex justify-between"><span>Tuesday - Friday</span> <span>9:00 AM - 7:00 PM</span></div>
+                            <div class="flex justify-between"><span>Saturday</span> <span>9:00 AM - 5:00 PM</span></div>
+                            <div class="flex justify-between"><span>Sunday - Monday</span> <span>Closed</span></div>
+                        </div>
+                         <a href="#contact" class="mt-8 w-full block text-center bg-pink-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-pink-600 transition-transform transform hover:scale-105">Book Your Visit</a>
+                    </div>
+                    <!-- Map -->
+                    <div class="lg:w-1/2 h-80 lg:h-auto rounded-lg shadow-lg overflow-hidden">
+                         <iframe
+                            class="w-full h-full"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2258839999997!2d-122.4194156846813!3d37.77492957975871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c4b1d799b%3A0x1c32c4a37b1f0c9b!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1616000000000!5m2!1sen!2sus"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-lg font-display">Glamour & Grace</p>
+                <div class="flex space-x-4 my-4 md:my-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                </div>
+                <p class="text-gray-400 text-sm">&copy; 2024 Glamour & Grace. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on link click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
